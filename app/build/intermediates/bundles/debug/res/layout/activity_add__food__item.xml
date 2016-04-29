@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#7D64AA" >
+
+    <TextView
+        android:id="@+id/sp_food_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="38dp"
+        android:text="Food Name"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sp_food_item_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="14dp"
+        android:textColor="#ffffff"
+        android:layout_toRightOf="@+id/sp_food_item_name"
+        android:ems="10" 
+        android:hint="Enter"
+        android:textColorHint="#ffffff">
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/sp_add_food_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_selected_place"
+        android:layout_alignLeft="@+id/et_food_name"
+        android:layout_alignRight="@+id/et_food_name"
+        android:layout_below="@+id/et_food_name"
+        android:layout_marginTop="14dp"
+       style="@layout/sp_food_type_list"
+       android:background="#ffffff"
+        android:entries="@array/food_type" />
+
+    <TextView
+        android:id="@+id/tv_selected_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sp_food_item_name"
+        android:layout_below="@+id/sp_food_item_name"
+        android:layout_marginTop="30dp"
+        android:text="Type"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_selected_place"
+        android:layout_below="@+id/tv_selected_place"
+        android:layout_marginTop="34dp"
+        android:text="Details"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_add_food_details"
+         android:textColorHint="#ffffff"
+          android:hint="....."
+         android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_user_name"
+        android:layout_alignBottom="@+id/tv_user_name"
+        android:layout_alignLeft="@+id/sp_add_food_item"
+        android:layout_alignRight="@+id/sp_add_food_item"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_user_name"
+        android:layout_below="@+id/et_add_food_details"
+        android:layout_marginTop="26dp"
+        android:text="Image"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/img_food_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_ad_itms"
+        android:layout_alignRight="@+id/btn_ad_itms"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_marginBottom="70dp"
+        android:layout_toRightOf="@+id/sp_food_item_name"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/btn_ad_itms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:background="#47297A"
+        android:text="Add Item"
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btn_browse_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/et_add_food_details"
+        android:layout_below="@+id/textView1"
+        android:background="#47297A"
+        android:text="Browse"
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
+    
+</RelativeLayout>

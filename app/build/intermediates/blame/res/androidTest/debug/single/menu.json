@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\user.xml",
+        "source": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\bundles\\debug\\res\\menu\\user.xml"
+    },
+    {
+        "merged": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\best_rated_food.xml",
+        "source": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\bundles\\debug\\res\\menu\\best_rated_food.xml"
+    },
+    {
+        "merged": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\main.xml",
+        "source": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\bundles\\debug\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\register.xml",
+        "source": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\bundles\\debug\\res\\menu\\register.xml"
+    },
+    {
+        "merged": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\restaurant_admin.xml",
+        "source": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\bundles\\debug\\res\\menu\\restaurant_admin.xml"
+    },
+    {
+        "merged": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\add__food__item.xml",
+        "source": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\bundles\\debug\\res\\menu\\add__food__item.xml"
+    },
+    {
+        "merged": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\actionbar_custom.xml",
+        "source": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\bundles\\debug\\res\\menu\\actionbar_custom.xml"
+    },
+    {
+        "merged": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\restaurant_list.xml",
+        "source": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\bundles\\debug\\res\\menu\\restaurant_list.xml"
+    },
+    {
+        "merged": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\food_details.xml",
+        "source": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\bundles\\debug\\res\\menu\\food_details.xml"
+    },
+    {
+        "merged": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\new_food.xml",
+        "source": "E:\\Android_studio_projects\\FoodAdviser\\app\\build\\intermediates\\bundles\\debug\\res\\menu\\new_food.xml"
+    }
+]

@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.foodadviser.MainActivity" 
+    android:background="#5E4190"
+    >
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iv_title"
+        android:layout_alignRight="@+id/et_login_password"
+        android:layout_below="@+id/et_login_password"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/btn"
+        android:text="Login" 
+        android:textColor="#ffffff"/>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_title"
+        android:layout_alignLeft="@+id/sp_food_item_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tv_signup"
+        android:layout_marginBottom="39dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:src="@drawable/food" />
+
+    <EditText
+        android:id="@+id/et_login_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iv_title"
+        android:layout_below="@+id/iv_logo"
+        android:layout_marginTop="86dp"
+        android:background="@drawable/rooundededittext"
+        android:drawableLeft="@drawable/ic_accessibility_white_24dp"
+        android:ems="10"
+        android:hint="Username"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" >
+        <requestFocus />
+        </EditText>
+
+    <TextView
+        android:id="@+id/sp_food_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_signup"
+        android:layout_alignBottom="@+id/tv_signup"
+        android:layout_toLeftOf="@+id/tv_signup"
+        android:text="New here ?"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btn_login"
+        android:layout_marginBottom="52dp"
+        android:layout_marginRight="29dp"
+        android:text=" Sign Up"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:clickable="true" />
+
+    <EditText
+        android:id="@+id/et_login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_login_username"
+        android:layout_below="@+id/et_login_username"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rooundededittext"
+        android:drawableLeft="@drawable/ic_lock_white_24dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:inputType="textPassword" >
+
+        
+    </EditText>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.foodadviser.User" >
+
+    <item
+        android:id="@+id/Newfoodmenuitem"
+        android:orderInCategory="100"
+        android:title="@string/newfood"
+        app:showAsAction="never"/>
+    
+ <item
+        android:id="@+id/Ratedfoodmenuitem"
+        android:orderInCategory="100"
+        android:title="@string/ratedfood"
+        app:showAsAction="never"/>
+</menu>

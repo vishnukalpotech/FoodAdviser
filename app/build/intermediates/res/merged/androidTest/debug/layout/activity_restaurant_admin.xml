@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7D64AA"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.foodadviser.RestaurantAdmin" >
+
+    <TextView
+        android:id="@+id/tv_selected_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sp_food_item_name"
+        android:layout_below="@+id/sp_food_item_name"
+        android:layout_marginTop="22dp"
+        android:text="Email"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <Spinner
+        android:id="@+id/sp_foodtype"
+        style="@layout/sp_food_type_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sp_food_list"
+        android:layout_alignLeft="@+id/tv_email"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_email"
+        android:layout_marginBottom="23dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginTop="17dp"
+        android:background="#ffffff"
+        android:entries="@array/r_type" />
+
+    <Spinner
+        android:id="@+id/sp_food_list"
+        style="@layout/spinne_food_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sp_foodtype"
+        android:layout_alignTop="@+id/textView4"
+        android:background="#ffffff" />
+
+    <Button
+        android:id="@+id/btn_rest_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tv_user_name"
+        android:layout_below="@+id/textView4"
+        android:background="#b366ff"
+        android:text="+"
+        android:textColor="#ffffff"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/btn_rest_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:background="@drawable/btn_shape"
+        android:text=" Update "
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btn_rest_logout"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_rest_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btn_rest_add"
+        android:layout_alignTop="@+id/btn_rest_update"
+        android:layout_marginTop="77dp"
+        android:background="@drawable/btn_shape"
+        android:text="Logout" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/tv_selected_place"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="28dp"
+        android:text="Type"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#7D64AA" />
+
+    <TextView
+        android:id="@+id/sp_food_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_rest_add"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="124dp"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_rest_admin_email"
+        android:layout_alignLeft="@+id/sp_food_item_name"
+        android:layout_marginBottom="14dp"
+        android:text="Location"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_marginTop="24dp"
+        android:text="Items"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:text="Type"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/btn_rest_update"
+        android:dropDownHeight="match_parent"
+        android:dropDownWidth="fill_parent"
+        android:ems="10"
+        android:inputType="textPersonName|textImeMultiLine"
+        android:textColor="#ffffff" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <EditText
+        android:id="@+id/et_rest_admin_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sp_food_item_name"
+        android:layout_alignLeft="@+id/auto_place"
+        android:ems="10"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_user_name"
+        android:layout_alignLeft="@+id/et_rest_admin_email"
+        android:text="Email_display"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/iv_rest_image"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/auto_place"
+        android:layout_alignLeft="@+id/textView1"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

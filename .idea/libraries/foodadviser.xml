@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="foodadviser">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/library/foodadviser.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

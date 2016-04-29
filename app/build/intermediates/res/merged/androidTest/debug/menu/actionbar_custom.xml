@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<item android:id="@+id/action_place"
+          android:icon="@drawable/ic_search_white_24dp"
+          android:title="Search Place"
+          android:showAsAction="ifRoom"/>
+<item android:id="@+id/action_location"
+          android:icon="@drawable/ic_explore_white_24dp"
+          android:title="Current Location"
+          android:showAsAction="ifRoom"/>
+</menu>
